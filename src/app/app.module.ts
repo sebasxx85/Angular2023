@@ -5,6 +5,8 @@ import { HeadComponent } from './componentes/head/head.component';
 import { ContenidoComponent } from './componentes/contenido/contenido.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { MenuComponent } from './componentes/menu/menu.component';
+import { DirectivasComponent } from './componentes/directivas/directivas.component';
+import { DirectivaPersonalizadaDirective } from './directivas/directiva-personalizada.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { MenuComponent } from './componentes/menu/menu.component';
     ContenidoComponent,
     FooterComponent,
     MenuComponent,
+    DirectivasComponent,
+    DirectivaPersonalizadaDirective,
   
   ],
   imports: [
