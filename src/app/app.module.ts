@@ -5,8 +5,11 @@ import { HeadComponent } from './componentes/head/head.component';
 import { ContenidoComponent } from './componentes/contenido/contenido.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { MenuComponent } from './componentes/menu/menu.component';
-import { DirectivasComponent } from './componentes/directivas/directivas.component';
-import { DirectivaPersonalizadaDirective } from './directivas/directiva-personalizada.directive';
+import { PrimeradirectivaComponent } from './directivas/primeradirectiva/primeradirectiva.component';
+import { FormsModule } from '@angular/forms';
+import { HijoComponent } from './componentes/hijo/hijo.component';
+import { PadreComponent } from './componentes/padre/padre.component';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +18,13 @@ import { DirectivaPersonalizadaDirective } from './directivas/directiva-personal
     ContenidoComponent,
     FooterComponent,
     MenuComponent,
-    DirectivasComponent,
-    DirectivaPersonalizadaDirective,
-  
+    PrimeradirectivaComponent,
+    HijoComponent,
+    PadreComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
