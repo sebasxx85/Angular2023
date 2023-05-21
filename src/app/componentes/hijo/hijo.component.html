@@ -1,1 +1,11 @@
 <p>Mensaje desde comp hijo</p>
+
+<div class="clase-hijo">
+<ol>
+    <li *ngFor="let estudiante of estudiantes">
+        <p> Hola soy {{estudiante.nombre}}, tengo {{estudiante.edad}}, 
+            y estoy en el curso de {{estudiante.curso}}</p>
+    </li>
+</ol>
+    <button (click)="agregarEstudiante()" class="btn btn-primary">Agregar Estudiante</button>
+</div>

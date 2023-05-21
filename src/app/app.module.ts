@@ -6,9 +6,10 @@ import { ContenidoComponent } from './componentes/contenido/contenido.component'
 import { FooterComponent } from './componentes/footer/footer.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { PrimeradirectivaComponent } from './directivas/primeradirectiva/primeradirectiva.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HijoComponent } from './componentes/hijo/hijo.component';
 import { PadreComponent } from './componentes/padre/padre.component';
+import { FormReactivoComponent } from './componentes/form-reactivo/form-reactivo.component';
 
 
 @NgModule({
@@ -21,10 +22,12 @@ import { PadreComponent } from './componentes/padre/padre.component';
     PrimeradirectivaComponent,
     HijoComponent,
     PadreComponent,
+    FormReactivoComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

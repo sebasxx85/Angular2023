@@ -1,2 +1,8 @@
-<p>Mensaje desde comp padre</p>
-<app-hijo></app-hijo>
+<div class="clase-padre">
+    <p>Mensaje desde comp padre</p>
+    <app-hijo [estudiantes]="estudiantesPadre" [funcionPrueba]="funcionPrueba"
+        (eventoSalida)="manejarEventoSalida($event)"
+        (eventoSalidaEstudiante)="agregarEstudiante($event)"
+        ></app-hijo>
+    <p>{{ mensajeSalida }}</p>
+</div>
